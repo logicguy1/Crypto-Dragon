@@ -51,7 +51,7 @@ def clear():
 ┏━━━━━━━━━━━━━━━━━━┓
 \033[1;31m1] \033[0;0mEncrypt
 \033[1;31m2] \033[0;0mDecrypt
-\033[1;31m3] \033[0;0mRegenarate Keys
+\033[1;31m3] \033[0;0mRegenerate Keys
 \033[1;31m4] \033[0;0mFile locations
 \033[1;31m5] \033[0;0mExit
 ┗━━━━━━━━━━━━━━━━━━┛""")
@@ -65,7 +65,7 @@ while True:
     print('\033[0;0m')
 
     if option not in ("1","2","3", "4", "5"):
-        print(f"\033[91m[ERROR]\033[0;0m Invaid option")
+        print(f"\033[91m[ERROR]\033[0;0m Invalid option")
         print(f"\033[2;37mPress any key to continue\033[0;0m\033[0;0m")
         getch()
     else:
@@ -109,7 +109,7 @@ while True:
 \033[1;31m1] \033[0;0mPrivate key
 \033[1;31m2] \033[0;0mPublic key
 \033[1;31m3] \033[0;0mInput key
-\033[1;31m4] \033[0;0mData storeage
+\033[1;31m4] \033[0;0mData storage
 \033[1;31m5] \033[0;0mShow data
 ┗━━━━━━━━━━━━━━━━━━┛
             """)
@@ -117,7 +117,7 @@ while True:
             print('\033[0;0m')
 
             if option not in ("1","2","3", "4", "5"):
-                print(f"\033[91m[ERROR]\033[0;0m Invaid option")
+                print(f"\033[91m[ERROR]\033[0;0m Invalid option")
                 print(f"\033[2;37mPress any key to continue\033[0;0m\033[0;0m")
                 getch()
             else:
