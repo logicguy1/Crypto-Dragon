@@ -12,7 +12,7 @@ def create_key():
         y = input("\033[2;37mAre you sure you want to overwrite the current keys? (y/n) \033[1;31m")
         print('\033[0;0m')
         if y.lower() != "y":
-            print(f"\033[91m[ERROR]\033[0;0m Key genaration canseld")
+            print(f"\033[91m[ERROR]\033[0;0m Key genaration canceled")
             return None
 
         size = input("\033[2;37mKey size (2048 recommended): \033[1;31m")
@@ -27,10 +27,10 @@ def create_key():
             backend=default_backend()
         )
         public_key = private_key.public_key()
-        print(f"\033[92m[Success] \033[0;0mKeys genarated")
+        print(f"\033[92m[Success] \033[0;0mKeys generated")
 
         #STOREING THE KEY
-        print(f"\033[93m[Working] \033[0;0mUpdateing files")
+        print(f"\033[93m[Working] \033[0;0mUpdating files")
 
         private_key = private_key.private_bytes(
             encoding=serialization.Encoding.PEM,
